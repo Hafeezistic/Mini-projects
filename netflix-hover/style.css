@@ -7,7 +7,7 @@ body {
 	display: flex;
 	margin-top: 10rem;
 	transition: all .5s ease;
-	border: 8px solid black;
+/* 	border: 8px solid black; */
 }
 
 .item {
