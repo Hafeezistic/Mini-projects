@@ -1,3 +1,4 @@
+// cosha library 
 cosha({
 	className: 'colorful-shadow',
 	blur: '10px',
