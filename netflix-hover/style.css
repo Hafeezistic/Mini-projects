@@ -1,0 +1,40 @@
+
+body {
+	overflow: hidden;
+}
+
+.container {
+	display: flex;
+	margin-top: 10rem;
+	transition: all .5s ease;
+	border: 8px solid black;
+}
+
+.item {
+	position: relative;
+	flex: 1 1 0px;
+	display: block;
+	transition: transform 500ms;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+.container:focus-within .item,
+.container:hover .item {
+	transform: translateX(-25%);
+}
+
+.container .item:hover,
+.container .item:focus {
+	transform: scale(1.5);
+	z-index: 1;
+}
+
+.item:focus ~ .item,
+.item:hover ~ .item {
+	transform: translateX(25%);
+}
+
