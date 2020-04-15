@@ -1,0 +1,58 @@
+body {
+  font-family: 'Source sans pro';
+}
+.accordian {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tabs {
+  margin: 5px 0;
+}
+
+.tab-heading {
+  padding: 10px;
+  background-color: crimson;
+  color: black;
+  border-radius: 5px;
+  display: block;
+  font-family: 'Source sans pro';
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.tab-heading h2 {
+  pointer-events: none;
+}
+/* botttom side */
+.tab-content {
+  background: #f3f3f3;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height .5s ease-in-out;
+}
+
+.tab-content p {
+  margin: 20px;
+}
+
+/* radio button */
+input {
+  display: none;
+}
+
+input:checked + .tab-heading {
+  border-radius: 3px 3px 0 0;
+}
+
+input:checked ~ .tab-content {
+  max-height: 200px;
+  border-radius: 0 0 3px 3px;
+}
+
+@media (max-width: 768px) {
+  .accordian {
+    margin: 10px 20px;
+  }
+}
